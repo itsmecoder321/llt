@@ -1,0 +1,263 @@
+/* General Styling
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff6b81;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.form-container {
+    margin: 20px 0;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6b81;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 107, 129, 0.5);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background: #ff6b81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff8aa6;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.letter {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    background: #fef2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+button#copyButton {
+    background: #6c63ff;
+}
+
+button#copyButton:hover {
+    background: #857cff;
+}
+
+.copy-message {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #28a745;
+    font-weight: bold;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: auto; */
+    color: #333;
+    flex-direction: row; /* Ensure sticky ads fit */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px; /* Space for sticky ad */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff6b81;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.form-container {
+    margin: 20px 0;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background: #ff6b81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Ad Styling */
+.ad {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px dashed #ccc;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.ad-sticky-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px dashed #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adl{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-flow: row; */
+    max-width: 400px;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    height: 500px;
+}
+
+.adlads{
+    display: flex;
+    max-width: 350px;
+    /* flex-direction: row;
+    flex-direction: row; */
+    flex: 0 0 50%;
+    /* flex-wrap: wrap; */
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-bottom: 70px; /* Extra space for sticky ad */
+    }
+
+    .ad {
+        font-size: 0.8rem;
+    }
+
+    .ad-sticky-bottom {
+        font-size: 0.8rem;
+    }
+    .adl{
+        display: none;
+        visibility: hidden;
+        width: 1px;
+    }
+}
